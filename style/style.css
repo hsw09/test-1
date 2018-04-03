@@ -1,0 +1,62 @@
+.chanjing8637_ind01 .text_box .img .zi h3 a {
+	color:#fff;
+}
+.chanjing8637_ind01 .text_box .img {
+	float:left;
+	position:relative;
+}
+.chanjing8637_ind01 .text_box .img  ul li {
+	cursor:pointer;
+	position:relative;
+	width:107px;
+	margin-right:10px;
+	height:60px;
+	float:left;
+}
+.chanjing8637_ind01 .text_box .img .zi h3 {
+	position:absolute;
+	left:20px;
+	bottom:78px;
+	background:url(http://p1.img.cctvpic.com/photoAlbum/templet/common/DEPA1375084860245486/jdi3_130715_8637.png) no-repeat 0 50%;
+	padding-left:42px;
+	height:28px;
+	line-height:28px;
+	font-family:"微软雅黑";
+	font-size:17px;
+	font-weight:bold;
+	color:#fff;
+}
+.chanjing8637_ind01 .text_box .img  ul .end {
+	margin:0;
+}
+.chanjing8637_ind01 .text_box .img  .kj {
+	width:940px;
+	position:absolute;
+	left:16px;
+	bottom:11px;
+}
+.chanjing8637_ind01 {
+	margin-left:20px;
+}
+.chanjing8637_ind01 .text_box {
+}
+.chanjing8637_ind01 .text_box .img  ul .cur .bk {
+	position:absolute;
+	left:0;
+	top:0;
+	width:107px;
+	height:60px;
+	background:url(http://p1.img.cctvpic.com/photoAlbum/templet/common/DEPA1375084860245486/jdi4_130715_8637.png) no-repeat;
+}
+.chanjing8637_ind01 .text_box .img .di {
+	width:960px;
+	height:114px;
+	background:#000;
+	filter:alpha(opacity=40);
+	-moz-opacity:0.4;
+	-khtml-opacity:0.4;
+	opacity:0.4;
+	position:absolute;
+	left:0;
+	bottom:0;
+}

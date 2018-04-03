@@ -1,0 +1,472 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>纪录片</title>
+<link href="style/index.css" rel="stylesheet" type="text/css" />
+<link href="style/docaward_new.css" rel="stylesheet" type="text/css" />
+<link href="style/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/TabControl.1.2.js"></script>
+<script type="text/javascript" src="js/BX.1.0.1.U.js"></script>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+</script>
+</head>
+
+<body>
+<div class="wrap">
+  <div class="logo"></div>
+  <div class="top"><a href="web/dl.html">登陆</a><span>|</span><a href="web/zc.html">注册</a></div>
+  <div class="nav">
+    <ul>
+      <li><a href="index.html">首页</a></li>
+      <li><a href="web/jp.html">记录·精品</a></li>
+      <li><a href="web/zx.html">记录·资讯</a></li>
+      <li><a href="web/mr.html">记录·名人</a>
+        <ul>
+          <li><a href="web/mr2.html">马克·哈里斯</a></li>
+        </ul>
+      </li>
+      <li><a href="web/ls.html">历史</a></li>
+      <li><a href="web/js.html">军事</a></li>
+      <li><a href="web/zr.html">自然</a></li>
+    </ul>
+  </div>
+<div class="col_fl col_w960" id="SUBD1375181031093512">
+			
+	
+				
+					<script type="text/javascript"> 
+	(function($){
+		var queue = [];var queueMap = [];var coordinate = {};var n = 0;lazyLoder = {
+			push:push,
+			load:load,
+			clear:clear,
+			show:show
+		}
+		function show(){
+			alert(queueMap);
+			alert(queueMap.length);
+			alert(queue.length);
+		}
+		function push(img){
+			$(img).attr("sid")?$(img).attr("sid"):$(img).attr("sid",n++);
+			var id = $(img).attr("sid");
+			if(!queueMap[id]){
+				queue.push(img);
+				queueMap[id] = id;
+			}
+		}
+		function load(){
+			if(queue.length==0){return}
+			computeCoodinate();
+			var temp = [];
+			
+			for (var i = 0; i < queue.length ;i++ ){
+				if($(queue[i]).attr("isOK")==1){
+					temp.push(i);
+					continue;
+				}
+				if(check(queue[i])==true){
+					loadIMG(queue[i]);
+					temp.push(i);
+					$(queue[i]).attr("isOK",1);
+				}
+			}
+			while(temp.length>0){
+				queue.splice(temp.pop(),1);
+			}
+		}
+		function clear(){
+			queue.length=0;
+		}
+		/*private function*/
+		function computeCoodinate(){
+			var windowHeight = $(window).height();
+			var windowWidth = $(window).width();
+			var scrollTop = document.body.scrollTop||document.documentElement.scrollTop;
+			coordinate.down = scrollTop > (coordinate.top?coordinate.top:0);
+			coordinate.up = scrollTop < (coordinate.top?coordinate.top:0);
+
+			coordinate.top = scrollTop;
+			coordinate.bottom = scrollTop + windowHeight;
+		}
+		function check(target){
+			var offset = $(target).offset();
+			var height = $(target).height();
+			var flag = true;
+			flag = flag && (offset.top>coordinate.top);
+			flag = flag && (offset.top < coordinate.bottom);
+			if (flag == false){
+				flag = flag && ((offset.top+height) > coordinate.top);
+				flag = flag && ((offset.top+height) < coordinate.bottom);
+			}
+			return flag;
+		}
+		function loadIMG(img){
+			setTimeout(function(){
+				$(img).attr("src",$(img).attr("lazy"));
+			},1);
+		}
+		
+	})($)
+	var lazyloadImgID = setInterval(function(){
+		$("img[lazy]").each(function(){
+			lazyLoder.push(this)
+		});
+		lazyLoder.load();
+	},100);
+	$(document).ready(function(){
+		clearInterval(lazyloadImgID);
+		$("img[lazy]").each(function(){
+			lazyLoder.push(this);
+		});
+		lazyLoder.load();
+		$(window).bind("scroll",lazyLoder.load).bind("resize",lazyLoder.load);
+	});
+</script>
+				
+			
+<div class="chanjing8637_ind01">
+<div class="text_box">
+	<div class="img" id="dtp">
+		<a id="dtpa" href="#"><img  id="tp" src="img/img01.jpg" width="960" height="391"/></a>
+		<div class="di"></div>
+		<div class="zi">
+			
+			<h3 id="a0" class="acc" style="display:block"><a href="#">梅派京剧艺术的传承和独特魅力</a></h3><h3 id="a1" class="acc" style="display:none"><a href="#">全球变暖环境之下真实的北极</a></h3><h3 id="a2" class="acc" style="display:none"><a href="#">极致玩家：展现普通中国人不普通的一面</a></h3><h3 id="a3" class="acc" style="display:none"><a href="#">初生之犊：生命最初阶段的终极挑战</a></h3><h3 id="a4" class="acc" style="display:none"><a href="#">那些被新旧岁月改变的普通人的生活与命运</a></h3><h3 id="a5" class="acc" style="display:none"><a href="#">破解这个星球上最奇特的进化过程</a></h3><h3 id="a6" class="acc" style="display:none"><a href="#">王陵出世 春秋纪侯结局之谜浮出世间</a></h3><h3 id="a7" class="acc" style="display:none"><a href="#">如何在保护国家安全与保护公民自由之间找到合适的界限？</a></h3>
+		</div>
+		<div class="kj">
+			<ul id="tp1">
+			
+			<li id="b0" class="cur"><div class="bk"></div><a href="#"><img id="img/img01.jpg" src="img/img02.jpg" width="107" height="60" /></a></li><li id="b1"><div class="bk"></div><a href="#"><img id="img/img03.jpg" src="img/img04.jpg" width="107" height="60" /></a></li><li id="b2"><div class="bk"></div><a href="#"><img id="img/img05.jpg" src="img/img06.jpg" width="107" height="60" /></a></li><li id="b3"><div class="bk"></div><a href="#"><img id="img/img07.jpg" src="img/img08.jpg" width="107" height="60" /></a></li><li id="b4"><div class="bk"></div><a href="#"><img id="img/img09.jpg" src="img/img10.jpg" width="107" height="60" /></a></li><li id="b5"><div class="bk"></div><a href="#"><img id="img/img11.jpg" src="img/img12.jpg" width="107" height="60" /></a></li><li id="b6"><div class="bk"></div><a href="#"><img id="img/img13.jpg" src="img/img14.jpg" width="107" height="60" /></a></li><li id="b7"><div class="bk"></div><a href="#"><img id="img/img15.jpg" src="img/img16.jpg" width="107" height="60" /></a></li>
+			</ul>
+			<input type="hidden" id="ccc_1" />
+		</div>
+	</div>
+	
+</div>
+</div>
+<script>
+$(document).ready(function(){
+$("#tp1 li").each(function(i)
+	{
+				$(this).mouseenter(function()
+				{
+					clearInterval(timer);
+					$(this).siblings("li").removeClass("cur").end().addClass("cur");
+					$("#a"+i).siblings(".acc").css({"display":"none"}).end().css({"display":"block"});
+					
+					var a=$(this).find("img").attr("id");
+					$("#dtp").find("#tp").attr("src",a);
+					
+					var c=$(this).find("img").attr("class");
+					$("#dtp").find("#dtpa").attr("href",c);
+					
+				});
+				$(this).mouseleave(function()
+				{
+					timer = setInterval(function(){
+							$("#ccc_1").click();
+					},3000);
+				});
+	});
+
+	var timer = setInterval(function(){
+				$("#ccc_1").click();
+		},3000);
+	
+
+$("#ccc_1").click(function(){
+				$("#tp1 li").each(function(i)
+				{
+						var len=$("#tp1 li").length;
+						len=len-1;
+						
+						if($("#b"+i).attr("class")=="cur")
+						{
+							
+							if(i==len)
+							{
+								
+								$("#b"+i).attr("class","");
+								$("#a"+i).hide();
+								y=0;
+								$("#b"+y).attr("class","cur");
+								$("#a"+y).show();
+								var a=$("#b"+y).find("img").attr("id");
+								$("#dtp").find("#tp").attr("src",a);
+								
+								var c=$(this).find("img").attr("class");
+								$("#dtpa").attr("href",c);
+								return false;
+							}
+							else
+							{
+							$("#b"+i).attr("class","");
+							$("#a"+i).hide();
+							y=i+1;
+							$("#b"+y).attr("class","cur");
+							$("#a"+y).show();
+							var a=$("#b"+y).find("img").attr("id");
+							$("#dtp").find("#tp").attr("src",a);
+							
+							var c=$(this).find("img").attr("class");
+							$("#dtpa").attr("href",c);
+							return false;
+							}
+						}	
+				});
+				
+												 });
+});
+</script>
+		</div>
+  <div id="main_content">
+    <div class="title">
+      <h2>记录·精品</h2>
+      <a href="web/jp.html">更多>>></a>
+    </div>
+  <div class="column">
+     <div class="vmp26_main" id="vmp26_tabbox">
+  <!--大图片 begin--> 
+ 
+  
+  <div style="display:block;" class="vmp26_pic">
+    <a class="vmp26_pic_link" href="#">
+      <img src="img/jphxzl.jpg" width="410" height="550" />
+    </a>
+    <dl>
+      <dt><strong>《河西走廊》</strong></dt>
+      <dd>
+        导演：赵启辰<br>
+        上映日期：2015-03-03<br>
+        片长：50分钟<br>
+        该片以位于中国西部的重要通道，丝绸之路的黄金段——河西走廊为讲述对象，从政治、军事、经济、文化、宗教等多角度呈现了从汉代开始直至今天，河西走廊及其连接的中国 西部 的历史，以及它对中国历史和文明进程中所发挥的独特作用。<br>
+      </dd>
+    </dl>
+  </div>
+  <div style="display:none;" class="vmp26_pic">
+    <a class="vmp26_pic_link" href="#">
+      <img src="img/jpmlzg.jpg" width="410" height="550" />
+    </a>
+    <dl>
+      <dt><strong>《美丽中国》</strong></dt>
+      <dd>
+        导演：Phil Chapman<br>
+        上映时间：2012-06-11<br>
+        片长：60分钟<br>
+        《美丽中国》是第一部表现中国野生动植物和自然人文景观的大型电视纪录片，是CCTV和BBC第一次联合摄制的作品。影片从长江以南的稻米之乡开始，到酷热的西双版纳雨林，极寒的珠穆朗玛峰，中国的标志长城，中华文化发源地黄河流域以及蜿蜒曲折的1.8万公里海岸线等。<br>
+      </dd>
+    </dl>
+  </div>
+   <div style="display:none;" class="vmp26_pic">
+    <a class="vmp26_pic_link" href="#">
+      <img src="img/jpshe.jpg" width="410" height="550" />
+    </a>
+    <dl>
+      <dt><strong>《舌尖上的中国》</strong></dt>
+      <dd>
+        导演：陈晓卿 / 任长箴 / 程工<br>
+        上映时间：2012-05-14<br>
+        片长：50分钟<br>
+        《舌尖上的中国》为中国中央电视台播出的美食类纪录片，主要内容为中国各地的美食生态。通过对中华美食的多个侧面，来展现食物给中国人生活带来的仪式、伦理等方面的文化；见识中国特色食材以及与食物相关、构成中国美食特有气质的一系列元素；了解中华饮食文化的精致和源远流长。<br>
+      </dd>
+    </dl>
+  </div>
+<div style="display:none;" class="vmp26_pic">
+    <a class="vmp26_pic_link" href="#">
+      <img src="img/jpcha.jpg" width="410" height="550" />
+    </a>
+    <dl>
+      <dt><strong>《茶，一片树叶的故事》</strong></dt>
+      <dd>
+        导演：王冲霄<br>
+        上映日期：2013-11-18<br>
+        片长：50分钟<br>
+        茶，是中国最具代表性的文化之一。千百年来，茶文化几经传承、历练、蜕变，焕发出别样的光彩和魅力。本纪录片寻访了云南、福建、四川的产茶重地，记录下小小的一片那嫩叶是如何历经风雨被采下来，并经过复杂的工序和手艺焙制称清香四溢的坐上佳品。<br>
+      </dd>
+    </dl>
+  </div>
+  <div style="display:none;" class="vmp26_pic">
+    <a class="vmp26_pic_link" href="#">
+      <img src="img/jpdqmd.jpg" width="410" height="550" />
+    </a>
+    <dl>
+      <dt><strong>《地球脉动》</strong></dt>
+      <dd>
+        导演：Alastair Fothergill<br>
+        上映时间：2006-02-27<br>
+        片长：60分钟<br>
+        BBC曾经制作出《蓝色星球》的纪录片摄影团队，再次集结奉上了这部堪称难以超越的经典纪录片《地球脉动》。从南极到北极，从赤道到寒带，从非洲草原到热带雨林，再从荒凉峰顶到深邃大海，难以数计的生物以极其绝美的身姿呈现在世人面前。<br /> 
+      </dd>
+    </dl>
+  </div>
+  <!--大图片 end-->
+
+  <!-- 小图片 begin -->
+  <ul class="vmp26_tab" id="vmp26_tabul">
+   
+    <li class="current">
+      <a href="#"><img title="河西走廊" src="img/jphxzl1.jpg" width="165" height="222" /></a>
+    </li>
+    <li class="">
+      <a href="#"><img title="美丽中国" src="img/jpmlzg1.jpg" width="165" height="222" /></a>
+    </li>
+     <li class="">
+      <a href="#"><img title="舌尖上的中国" src="img/jpshe1.jpg" width="165" height="222" /></a>
+    </li>
+    <li class="">
+      <a href="#"><img title="茶，一片树叶的故事" src="img/jpcha1.jpg" width="165" height="222" /></a>
+    </li>
+    <li class="">
+      <a href="#"><img title="地球脉动" src="img/jpdqmd1.jpg" width="165" height="222" /></a>
+    </li>
+  </ul>
+  <!-- 小图片 end -->
+</div>
+<span class="corner"></span>
+<script>
+(function() {
+var tc_91 = new TabControl();
+tc_91.addRange($("vmp26_tabul").getElementsByTagName("li"), O.getElementsByClassName($("vmp26_tabbox"), "vmp26_pic", "div"));
+tc_91.triggerType = 'mouseover'; //鼠标切换方式设置 点击切换：click 鼠标移上去切换: mouseover
+tc_91.enableSlide = false; //自动切换功能是否启用
+tc_91.slideInterval = 5000; //自动切换的间隔时间
+tc_91.defaultPage = 0; //缺省显示第几页
+tc_91.init();
+})();
+</script> 
+  </div>
+  <div id="box_mr">
+    <div class="title">
+      <h2>记录·名人</h2>
+      <a href="web/mr.html"><span>更多>>></span></a>
+    </div>
+      <div id="box_mr_mid">
+        <div id="box_mr_left">
+        <span><img src="img/con_mid_title.png" width="173" height="17" /></span>
+        <strong><img src="img/mr-pic1.jpg" width="265" height="207" /></strong></div>
+        <div id="box_mr_right"><img src="img/mr-mk.jpg" width="130" height="172" />
+          <div id="box_mr_mid_txt">
+            <h3><a href="web/mr2.html">马克·哈里斯</a></h3>
+            <p>马克·哈里斯，美国导演，其作品《红木林》、《陌生人的怀抱》分别在1967年、2001年获得奥斯卡最佳纪录短片奖和奥斯卡最佳纪录长片奖。</p>
+          </div>
+          <ul>
+            <li><a href="web/mr2.html">《黑暗里的医生》：揭露了虐囚流言背后的丑闻</a></li>
+            <li><a href="web/mr2.html">《马拉松精神》：重温马拉松比赛的历史和人物</a></li>
+            <li><a href="web/mr2.html">《电影剪接的魔力》：采访了多名剪辑大师</a></li>
+          </ul>
+        </div>
+      </div>
+  </div>
+  <div id="box_zx">
+    <div class="title">
+      <h2>记录·资讯</h2>
+      <span><a href="web/zx.html">更多>>></a></span>
+    </div>
+    <div id="box_zxtext">
+      <h3><a href="web/zx2.html">舌尖团队最新力作<br/>《寻味顺德》五一首播</a></h3>
+      <p><a href="web/zx2.html">《寻味顺德》由创作《舌尖上的中国》的主力团队担纲制作，以美食为切入点，记录了30多位顺德人的美味人生和近百道顺德菜的精彩故事。</a></p>
+      <ul>
+        <li><a href="#">四部原创大片亮相上海 纪录频道闪耀浦江两岸</a></li>
+        <li><a href="#">2016年中国纪录片产业论坛在京成功举行</a></li>
+        <li><a href="#">《中国纪录片发展研究报告2016》发布</a></li>
+        <li><a href="#">纪录片《我在故宫修文物》成"网红"</a></li>
+        <li><a href="#">湖南卫视推大型美食纪录片《辣椒的味道》</a></li>
+        <li><a href="#">第六届北京国际电影节纪录单元奖项揭晓　法国作品《人类》获评审团特别推荐</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="box1">
+    <div class="title">
+      <h2>历史</h2>
+      <a href="web/ls.html">更多>>></a>
+    </div>
+    <div class="box1-nr">
+      <img src="img/lscc.jpg" width="180" height="250" />
+      <h1><a href="#">《长城：中国的故事》</a></h1>
+    </div>
+    <div class="box1-nr">
+      <img src="img/lsgg100.jpg" width="180" height="250" />
+      <h1><a href="#">《故宫100》</a></h1>
+    </div>
+    <div class="box1-nr">
+      <img src="img/lstbgg.jpg" width="180" height="250" />
+      <h1><a href="#">《台北故宫》</a></h1>
+    </div>
+    <div class="box1-nrz">
+      <img src="img/lsqsl.jpg" width="180" height="250" />
+      <h1><a href="#">《二次大战启示录》</a></h1>
+    </div>
+  </div>
+    <div class="box1">
+    <div class="title">
+      <h2>军事</h2>
+      <a href="web/js.html">更多>>></a>
+    </div>
+    <div class="box1-nr">
+      <img src="img/jszg.jpg" width="180" height="250" />
+      <h1><a href="#">《中国远征军》</a></h1>
+    </div>
+    <div class="box1-nr">
+      <img src="img/jsct.jpg" width="180" height="250" />
+      <h1><a href="#">《冲天》</a></h1>
+    </div>
+    <div class="box1-nr">
+      <img src="img/jsez.jpg" width="180" height="250" />
+      <h1><a href="#">《二战全史》</a></h1>
+    </div>
+    <div class="box1-nrz">
+      <img src="img/jsfxs.jpg" width="180" height="250" />
+      <h1><a href="#">《普通法西斯》</a></h1>
+    </div>
+  </div>
+    <div class="box1">
+    <div class="title">
+      <h2>自然</h2>
+      <a href="web/zr.html">更多>>></a>
+    </div>
+    <div class="box1-nr">
+      <img src="img/zrhtw.jpg" width="180" height="250" />
+      <h1><a href="#">《海豚湾》</a></h1>
+    </div>
+    <div class="box1-nr">
+      <img src="img/zrlife.jpg" width="180" height="250" />
+      <h1><a href="#">《Life》</a></h1>
+    </div>
+    <div class="box1-nr">
+      <img src="img/zrlb.jpg" width="180" height="250" />
+      <h1><a href="#">《猎捕》</a></h1>
+    </div>
+    <div class="box1-nrz">
+      <img src="img/zrbdxq.jpg" width="180" height="250" />
+      <h1><a href="#">《冰冻星球》</a></h1>
+    </div>
+  </div>
+  </div>
+  <div class="footer">
+    <div class="footer_logo"></div>
+    <div class="footer_mid">
+      <p>违法和不良信息举报924042084@qq.com</p>
+      <p>制作者：15多媒体1班  何善文  学号：1523210104</p>
+      <p>copyright© 2015-2016 海南经贸职业技术学院工程技术学院版权所有</p>
+    </div>
+    <div class="footer_behind">
+      <p>友情链接</p>
+      <form name="form" id="form">
+        <select name="jumpMenu" id="jumpMenu" onchange="MM_jumpMenu('parent',this,0)">
+          <option value="http://jishi.cctv.com/index.shtml/">央视纪实网</option>
+          <option value="http://www.iqiyi.com/jilupian/">爱奇艺纪录片频道</option>
+          <option value="http://www.recordcn.org/">纪录片之家</option>
+        </select>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>

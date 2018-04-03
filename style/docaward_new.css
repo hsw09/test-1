@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+.column{width:1000px;margin:0 auto;font-family:"Microsoft YaHei","SimSun",Arial,Helvetica,sans-serif}
+.vmp26_main{position:relative;width:1000px;overflow:hidden}
+.vmp26_pic_link,.vmp26_pic_link:hover{display:block;width:329px;height:442px;text-decoration:none}
+.vmp26_pic_link img{display:block;width:329px;height:439px;border-top:3px solid #282828;overflow:hidden}
+.vmp26_pic dl{position:absolute;top:0;right:1px;width:616px;padding:30px 0 0 54px}
+.vmp26_pic dl dt{
+	line-height: 36px;
+	font-size: 18px;
+	color: #765A45
+}
+.vmp26_pic dl dt strong{font-size:30px}
+.vmp26_pic dl dt span{display:inline-block;width:44px;height:1px;padding:0 10px 13px;background:url(http://y1.ifengimg.com/ad0d010d99c699f5/2015/38/docaward2015bg06.jpg) no-repeat center}
+.vmp26_pic dl dd{line-height:24px;padding:10px 0 0;font-size:14px}
+.vmp26_tab{position:absolute;bottom:0;right:1px;width:670px;overflow:hidden}
+.vmp26_tab li{display:inline;float:left;width:134px;cursor:pointer}
+.vmp26_tab li img{display:block;width:134px;height:178px;overflow:hidden}
